@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WorkboxPlugin = require('workbox-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -21,7 +20,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.join(__dirname, './src/client/views/index.html'),
             filename: './index.html'
-        }),
-        new WorkboxPlugin.GenerateSW()
+        })
     ]
 }

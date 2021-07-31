@@ -1,5 +1,7 @@
+import { isUri } from 'valid-url'
+
 function isValidUrl(inputText) {
-    // TODO: return true if the input text is a valid URL, or false if not
+    return isUri(inputText) ? true : false;
 }
 
 export { isValidUrl }
